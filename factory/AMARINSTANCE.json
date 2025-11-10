@@ -1,0 +1,9 @@
+{
+	"name": "AMARINSTANCE",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "62a6e116-48cf-4a9b-9eb5-0bd963b900de",
+		"tenantId": "8cdaffd4-592b-4f2a-9aa4-ed4db31ed414"
+	}
+}
