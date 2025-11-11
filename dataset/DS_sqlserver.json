@@ -1,0 +1,15 @@
+{
+	"name": "DS_sqlserver",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_sql server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"table": "emp"
+		}
+	}
+}
