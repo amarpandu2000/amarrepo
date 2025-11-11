@@ -116,6 +116,10 @@
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
 										"recursive": true,
+										"wildcardFolderPath": {
+											"value": "@item().txt",
+											"type": "Expression"
+										},
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
@@ -130,6 +134,50 @@
 								"enableStaging": false,
 								"translator": {
 									"type": "TabularTranslator",
+									"mappings": [
+										{
+											"source": {
+												"name": "ID\tName\t\tDepartment\tDesignation\t\tSalary",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "ID",
+												"type": "Int32",
+												"physicalType": "int"
+											}
+										},
+										{
+											"sink": {
+												"name": "Name",
+												"type": "String",
+												"physicalType": "varchar"
+											}
+										},
+										{
+											"sink": {
+												"name": "Department",
+												"type": "String",
+												"physicalType": "varchar"
+											}
+										},
+										{
+											"sink": {
+												"name": "Designation",
+												"type": "String",
+												"physicalType": "varchar"
+											}
+										},
+										{
+											"sink": {
+												"name": "Salary",
+												"type": "Decimal",
+												"physicalType": "money",
+												"scale": 4,
+												"precision": 19
+											}
+										}
+									],
 									"typeConversion": true,
 									"typeConversionSettings": {
 										"allowDataTruncation": true,
