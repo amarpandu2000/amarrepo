@@ -115,7 +115,8 @@
 									"type": "DelimitedTextSource",
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
-										"fileListPath": "input-floder/employee_details.csv",
+										"recursive": true,
+										"wildcardFileName": ".txt",
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
