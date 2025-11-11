@@ -115,7 +115,7 @@
 									"type": "DelimitedTextSource",
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
-										"fileListPath": "input-floder/employee_details.txt",
+										"fileListPath": "input-floder/employee_details.csv",
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
@@ -125,8 +125,7 @@
 								"sink": {
 									"type": "SqlServerSink",
 									"writeBehavior": "insert",
-									"sqlWriterUseTableLock": false,
-									"tableOption": "autoCreate"
+									"sqlWriterUseTableLock": false
 								},
 								"enableStaging": false,
 								"translator": {
