@@ -116,7 +116,6 @@
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
 										"recursive": true,
-										"wildcardFileName": ".txt",
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
@@ -140,7 +139,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DS_meta1",
+									"referenceName": "DS_textfile",
 									"type": "DatasetReference"
 								}
 							],

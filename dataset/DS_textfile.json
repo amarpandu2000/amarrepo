@@ -1,0 +1,28 @@
+{
+	"name": "DS_textfile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AMARSTORE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "employee_details.txt",
+				"container": "input-floder"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ID\tName\t\tDepartment\tDesignation\t\tSalary",
+				"type": "String"
+			}
+		]
+	}
+}
