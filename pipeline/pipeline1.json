@@ -116,12 +116,7 @@
 									"type": "DelimitedTextSource",
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
-										"recursive": true,
-										"wildcardFolderPath": {
-											"value": "@item().name\r\n",
-											"type": "Expression"
-										},
-										"wildcardFileName": "*",
+										"fileListPath": "input-floder/employee_details.txt",
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
