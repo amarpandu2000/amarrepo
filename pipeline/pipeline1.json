@@ -141,13 +141,25 @@
 							"inputs": [
 								{
 									"referenceName": "DS_source",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@variables('filename')",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
 								{
 									"referenceName": "DS_azuredatabase",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@variables('filename')",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
