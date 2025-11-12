@@ -228,7 +228,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"filename": {
-											"value": "@concat(first(variables('filename')),'_',formatDateTime(utcNow(),'yyyyMMdd'),'.csv')",
+											"value": "@concat(substring(variables('filename'),0,add(indexof(variables('filename'),'.'),-1)),'_',formatDateTime(utcNow(),'yyyyMMdd'),'.csv')",
 											"type": "Expression"
 										}
 									}
