@@ -150,7 +150,13 @@
 							"typeProperties": {
 								"dataset": {
 									"referenceName": "ds_filtered",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								},
 								"fieldList": [
 									{
