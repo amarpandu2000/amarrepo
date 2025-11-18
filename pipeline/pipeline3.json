@@ -108,11 +108,11 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get Metadata1').output.childItems\nactivity('Get Metadata1').output.itemName\nactivity('Get Metadata1').output.itemType",
+						"value": "@activity('Get Metadata1').output.childItems",
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@equals(variables('filename'),item().name.csv)",
+						"value": "@equals(variables('filename'), item().csv)",
 						"type": "Expression"
 					}
 				}
