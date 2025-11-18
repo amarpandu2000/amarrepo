@@ -159,10 +159,7 @@
 									}
 								},
 								"fieldList": [
-									{
-										"value": "@item().name",
-										"type": "Expression"
-									}
+									"childItems"
 								],
 								"storeSettings": {
 									"type": "AzureBlobStorageReadSettings",
