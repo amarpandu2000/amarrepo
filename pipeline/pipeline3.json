@@ -45,7 +45,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get Metadata1').output.childItems",
+						"value": "@activity('Get Metadata1').output",
 						"type": "Expression"
 					},
 					"isSequential": true,
@@ -118,42 +118,6 @@
 				}
 			},
 			{
-				"name": "Get Metadata2",
-				"type": "GetMetadata",
-				"dependsOn": [
-					{
-						"activity": "ForEach2",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"dataset": {
-						"referenceName": "ds_filtered",
-						"type": "DatasetReference"
-					},
-					"fieldList": [
-						"childItems"
-					],
-					"storeSettings": {
-						"type": "AzureBlobStorageReadSettings",
-						"enablePartitionDiscovery": false
-					},
-					"formatSettings": {
-						"type": "DelimitedTextReadSettings"
-					}
-				}
-			},
-			{
 				"name": "ForEach2",
 				"type": "ForEach",
 				"dependsOn": [
@@ -173,43 +137,31 @@
 					"isSequential": true,
 					"activities": [
 						{
-							"name": "Set variable1_copy1",
-							"type": "SetVariable",
+							"name": "Get Metadata3",
+							"type": "GetMetadata",
 							"dependsOn": [],
 							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
 								"secureOutput": false,
 								"secureInput": false
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "filename",
-								"value": {
-									"value": "@item().name",
-									"type": "Expression"
-								}
-							}
-						},
-						{
-							"name": "Set variable2_copy1",
-							"type": "SetVariable",
-							"dependsOn": [
-								{
-									"activity": "Set variable1_copy1",
-									"dependencyConditions": [
-										"Succeeded"
-									]
-								}
-							],
-							"policy": {
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"userProperties": [],
-							"typeProperties": {
-								"variableName": "filetype",
-								"value": {
-									"value": "@item().type",
-									"type": "Expression"
+								"dataset": {
+									"referenceName": "ds_filtered",
+									"type": "DatasetReference"
+								},
+								"fieldList": [
+									"childItems"
+								],
+								"storeSettings": {
+									"type": "AzureBlobStorageReadSettings",
+									"enablePartitionDiscovery": false
+								},
+								"formatSettings": {
+									"type": "DelimitedTextReadSettings"
 								}
 							}
 						}
