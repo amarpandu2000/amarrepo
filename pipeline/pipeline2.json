@@ -51,10 +51,11 @@
 					"storedProcedureName": "[dbo].[carprocedure]",
 					"storedProcedureParameters": {
 						"carname": {
-							"value": {
-								"value": "@pipeline().parameters.filename",
-								"type": "Expression"
-							},
+							"value": "vehiclename",
+							"type": "String"
+						},
+						"company": {
+							"value": "cmpny",
 							"type": "String"
 						}
 					}
