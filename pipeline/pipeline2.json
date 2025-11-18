@@ -24,7 +24,21 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
-						"sqlReaderQuery": "create procedure carprocedure\nas\nbegin \nselect carname from cars\nwhere company = 'suzuki'\nend",
+						"sqlReaderStoredProcedureName": "[dbo].[movieprocedure]",
+						"storedProcedureParameters": {
+							"hero": {
+								"type": "String",
+								"value": "allu arjun"
+							},
+							"heroine": {
+								"type": "String",
+								"value": "rashmika"
+							},
+							"mvname": {
+								"type": "String",
+								"value": "aasalu thagedeleee"
+							}
+						},
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
