@@ -13,9 +13,11 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
+				"userProperties": [],
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
+						"sqlReaderQuery": "update dbo.cars\nset category = 'suv'\nwhere id=1\n",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
