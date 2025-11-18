@@ -154,7 +154,10 @@
 									"type": "DatasetReference"
 								},
 								"fieldList": [
-									"itemName"
+									{
+										"value": "@item().name",
+										"type": "Expression"
+									}
 								],
 								"storeSettings": {
 									"type": "AzureBlobStorageReadSettings",
