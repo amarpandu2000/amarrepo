@@ -137,7 +137,7 @@
 					"isSequential": true,
 					"activities": [
 						{
-							"name": "Get Metadata3",
+							"name": "Get Metadata2",
 							"type": "GetMetadata",
 							"dependsOn": [],
 							"policy": {
