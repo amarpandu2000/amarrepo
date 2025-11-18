@@ -13,11 +13,10 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
-						"sqlReaderQuery": "alter table dbo.cars\nadd column category varchar(50)\n\n",
+						"sqlReaderQuery": "alter table cars\nadd column category varchar(50)\n\n",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
