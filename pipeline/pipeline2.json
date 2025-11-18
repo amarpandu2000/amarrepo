@@ -5,14 +5,7 @@
 			{
 				"name": "Lookup1",
 				"type": "Lookup",
-				"dependsOn": [
-					{
-						"activity": "Stored procedure1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
@@ -48,14 +41,18 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[dbo].[carprocedure]",
+					"storedProcedureName": "[dbo].[movies]",
 					"storedProcedureParameters": {
-						"carname": {
-							"value": "vehiclename",
+						"hero": {
+							"value": "ram",
 							"type": "String"
 						},
-						"company": {
-							"value": "cmpny",
+						"heroine": {
+							"value": "sreeleela",
+							"type": "String"
+						},
+						"mvname": {
+							"value": "skanda",
 							"type": "String"
 						}
 					}
