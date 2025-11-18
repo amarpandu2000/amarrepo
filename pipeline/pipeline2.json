@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
-						"sqlReaderQuery": "update dbo.cars\nset category = 'suv'\nwhere id=1\n",
+						"sqlReaderQuery": "update dbo.cars\nset category = 'offroad'\nwhere id=2\n",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
