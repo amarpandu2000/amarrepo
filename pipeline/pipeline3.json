@@ -112,7 +112,7 @@
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@equals(variables('filename'), item().csv)",
+						"value": "@equals(variables('filename'), item().name.csv)",
 						"type": "Expression"
 					}
 				}
