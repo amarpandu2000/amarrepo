@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
-						"sqlReaderQuery": "update dbo.cars\nset category = offroad\nwhere id=2\n",
+						"sqlReaderQuery": "create procedure carprocedure\nas\nbegin \nselect carname from cars\nwhere company = 'suzuki'\nend",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
