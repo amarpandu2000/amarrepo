@@ -6,19 +6,20 @@
 				"name": "ForEach1",
 				"type": "ForEach",
 				"dependsOn": [],
-				"userProperties": [
-					{
-						"name": "directory"
-					},
-					{
-						"name": "files"
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
 					"isSequential": false
 				}
 			}
 		],
+		"parameters": {
+			"directory": {
+				"type": "string"
+			},
+			"files": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
