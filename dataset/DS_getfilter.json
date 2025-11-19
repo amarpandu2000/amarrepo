@@ -5,6 +5,11 @@
 			"referenceName": "LS_AMARSTORE",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"filename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
@@ -12,7 +17,7 @@
 				"type": "AzureBlobStorageLocation",
 				"container": "input-folder"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "\t",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
