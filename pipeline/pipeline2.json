@@ -24,6 +24,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
+						"sqlReaderQuery": "truncate table dbo.movies\r\n\r\n\r\nselect  1",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
