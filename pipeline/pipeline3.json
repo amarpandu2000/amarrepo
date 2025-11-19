@@ -155,7 +155,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"filename": {
-											"value": "@string(item().name)",
+											"value": "@string(item())",
 											"type": "Expression"
 										}
 									}
