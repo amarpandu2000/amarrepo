@@ -119,7 +119,7 @@
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@equals(item().type,'file')",
+						"value": "@equals(item().type,'folder')",
 						"type": "Expression"
 					}
 				}
