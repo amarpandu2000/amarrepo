@@ -25,10 +25,6 @@
 				"name": "company",
 				"type": "varchar"
 			}
-		],
-		"typeProperties": {
-			"schema": "dbo",
-			"table": "filtered"
-		}
+		]
 	}
 }
