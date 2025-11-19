@@ -93,6 +93,10 @@
 										"directory": {
 											"value": "@item().name",
 											"type": "Expression"
+										},
+										"filename": {
+											"value": "@activity('Filter1').output.value",
+											"type": "Expression"
 										}
 									}
 								},
