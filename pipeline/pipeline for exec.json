@@ -37,7 +37,7 @@
 											"type": "Expression"
 										},
 										"wildcardFileName": {
-											"value": "@pipeline().parameters.files",
+											"value": "@item().name",
 											"type": "Expression"
 										},
 										"enablePartitionDiscovery": false
@@ -72,7 +72,7 @@
 											"type": "Expression"
 										},
 										"filename": {
-											"value": "@pipeline().parameters.files",
+											"value": "@item().name",
 											"type": "Expression"
 										}
 									}
