@@ -113,7 +113,7 @@
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@equals(variables('filename'), concat(item().name,'.', '.csv'))\n\n",
+						"value": "@equals(item().type,'folder')",
 						"type": "Expression"
 					}
 				}
@@ -121,6 +121,8 @@
 			{
 				"name": "ForEach2",
 				"type": "ForEach",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Filter1",
