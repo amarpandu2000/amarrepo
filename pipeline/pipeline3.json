@@ -132,7 +132,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Filter1').output",
+						"value": "@array(activity('Filter1').output)",
 						"type": "Expression"
 					},
 					"isSequential": true,
