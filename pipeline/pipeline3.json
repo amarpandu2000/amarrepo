@@ -50,7 +50,7 @@
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@item().type",
+						"value": "@equals(item().type,'file')",
 						"type": "Expression"
 					}
 				}
