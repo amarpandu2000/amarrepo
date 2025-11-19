@@ -143,13 +143,13 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"filename": {
-								"value": "@string(activity('Filter1').output)",
+								"value": "@string(activity('Filter1').output.name)",
 								"type": "Expression"
 							}
 						}
 					},
 					"fieldList": [
-						"childItems"
+						"itemName"
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
