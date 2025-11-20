@@ -86,7 +86,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"dataset": {
-									"referenceName": "ds_filtered",
+									"referenceName": "DS_newfilterd",
 									"type": "DatasetReference",
 									"parameters": {
 										"directory": {
@@ -94,7 +94,7 @@
 											"type": "Expression"
 										},
 										"filename": {
-											"value": "@activity('Get Metadata1').output.childItems",
+											"value": "@activity('Filter1').output.value",
 											"type": "Expression"
 										}
 									}
