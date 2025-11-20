@@ -90,7 +90,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"directory": {
-											"value": "@item().type",
+											"value": "@item().name",
 											"type": "Expression"
 										}
 									}
