@@ -71,6 +71,7 @@
 						"value": "@activity('Filter1').output.value",
 						"type": "Expression"
 					},
+					"isSequential": false,
 					"activities": [
 						{
 							"name": "Get Metadata2",
@@ -130,11 +131,11 @@
 								"waitOnCompletion": true,
 								"parameters": {
 									"directory": {
-										"value": "@activity('Get Metadata2').output.childItems",
+										"value": "@item().name",
 										"type": "Expression"
 									},
 									"filename": {
-										"value": "@item().name",
+										"value": "@activity('Get Metadata2').output.childItems",
 										"type": "Expression"
 									}
 								}
