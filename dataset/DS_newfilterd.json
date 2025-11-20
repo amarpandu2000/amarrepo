@@ -19,7 +19,7 @@
 					"value": "@dataset().directory",
 					"type": "Expression"
 				},
-				"container": "filtered-folder"
+				"container": "input-folder"
 			},
 			"columnDelimiter": "\t",
 			"escapeChar": "\\",
