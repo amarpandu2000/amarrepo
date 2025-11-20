@@ -28,7 +28,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "filtered"
+			"table": "newfilter"
 		}
 	}
 }
