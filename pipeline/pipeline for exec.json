@@ -65,10 +65,6 @@
 										"directory": {
 											"value": "@pipeline().parameters.directory",
 											"type": "Expression"
-										},
-										"filename": {
-											"value": "@item().name",
-											"type": "Expression"
 										}
 									}
 								}
