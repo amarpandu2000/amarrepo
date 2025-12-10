@@ -44,7 +44,13 @@
 				"inputs": [
 					{
 						"referenceName": "AzureSqlTable1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"directory": {
+								"value": "@pipeline().TriggerName",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
