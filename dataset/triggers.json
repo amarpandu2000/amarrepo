@@ -1,0 +1,27 @@
+{
+	"name": "triggers",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AMARSTORE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "input-folder"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ID\tName\tDepartment\tDesignation\tSalary",
+				"type": "String"
+			}
+		]
+	}
+}
