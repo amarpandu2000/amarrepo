@@ -1,0 +1,23 @@
+{
+	"name": "DS_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_sink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "amar-folder",
+				"container": "input-folder"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
