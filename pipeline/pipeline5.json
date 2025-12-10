@@ -46,7 +46,10 @@
 						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference",
 						"parameters": {
-							"directory": "incoming"
+							"directory": {
+								"value": "@pipeline().parameters.directory",
+								"type": "Expression"
+							}
 						}
 					}
 				],
@@ -58,6 +61,11 @@
 				]
 			}
 		],
+		"parameters": {
+			"directory": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
