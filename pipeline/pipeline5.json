@@ -63,7 +63,7 @@
 		],
 		"parameters": {
 			"directory": {
-				"type": "String"
+				"type": "string"
 			}
 		},
 		"annotations": []
