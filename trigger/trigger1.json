@@ -8,6 +8,9 @@
 				"pipelineReference": {
 					"referenceName": "pipeline5",
 					"type": "PipelineReference"
+				},
+				"parameters": {
+					"directory": "directory"
 				}
 			}
 		],
