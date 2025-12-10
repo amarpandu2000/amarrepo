@@ -5,12 +5,21 @@
 			"referenceName": "LS_AMARSTORE",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"directory": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "employee.txt",
+				"folderPath": {
+					"value": "@dataset().directory",
+					"type": "Expression"
+				},
 				"container": "input-folder"
 			},
 			"columnDelimiter": ",",
