@@ -144,6 +144,10 @@
 									"referenceName": "DS_source",
 									"type": "DatasetReference",
 									"parameters": {
+										"directory": {
+											"value": "@activity('Get Metadata1').output.childItems",
+											"type": "Expression"
+										},
 										"filename": {
 											"value": "@variables('filename')",
 											"type": "Expression"
